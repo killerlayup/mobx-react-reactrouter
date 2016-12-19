@@ -20,7 +20,7 @@ export default class Subpage extends Component {
 				<ul>
 					{this.store.items && this.store.items.length ? this.store.items.slice(6,12).map(post => {
 						return <li key={post.id}>
-						<Link to={`${this.props.pathname}/${post.id}`} activeClassName="active">
+						<Link to={`posts/${post.id}`} activeClassName="active">
 						<h1>{post.title}</h1>
 						</Link>
 						<p>{post.body.substring(0, 120)}</p>
