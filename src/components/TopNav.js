@@ -29,7 +29,7 @@ export default class TopNav extends Component {
 		} = this.store
 		return (
 			<nav>
-				<Link to="/home"  activeClassName="active">Home</Link>
+				<Link to="/"  activeClassName="active">Home</Link>
 				{authenticated && <Link to="/posts" activeClassName="active">Posts</Link>}
 			</nav>
 		)

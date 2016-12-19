@@ -6,6 +6,7 @@ import {
 import App from './components/App'
 // import { App, AddItems, Foo } from './containers' // 
 import Home from './components/Home'
+import TopBar from './components/TopBar'
 import Subpage from './components/Subpage'
 import Subitem from './components/Subitem'
 import Login from './components/Login'
@@ -13,7 +14,7 @@ import Login from './components/Login'
 export default (
 	<Route path="/" component={App}>
 		<IndexRoute component={Home}/>
-		<Route path="home" component={Home}/>
+		<Route path="topbar" component={TopBar}/>
         <Route path="posts" component={Subpage}/>
         <Route path="posts/:id" component={Subitem}/>
 		<Route path="login" component={Login}/>
